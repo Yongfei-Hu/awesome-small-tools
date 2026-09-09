@@ -1,0 +1,67 @@
+name: 推荐软件
+description: 推荐一个值得体验或收录的小而美软件
+title: "[推荐] "
+labels:
+  - candidate
+body:
+  - type: markdown
+    attributes:
+      value: 感谢推荐。请尽量提供第一手使用体验，而不只是复制官方介绍。
+  - type: input
+    id: name
+    attributes:
+      label: 软件名称
+      placeholder: MarkerOn
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: 官方仓库或官网
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 它解决什么问题？
+      description: 请用一两句话描述具体使用场景。
+    validations:
+      required: true
+  - type: dropdown
+    id: tested
+    attributes:
+      label: 你实际使用过吗？
+      options:
+        - 使用过
+        - 尚未使用
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: 优点与限制
+      description: 至少写出一个优点和一个限制；尚未使用时请说明推荐依据。
+    validations:
+      required: true
+  - type: input
+    id: platforms
+    attributes:
+      label: 支持平台
+      placeholder: Windows、macOS、Linux
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: 许可证或收费模式
+      placeholder: MIT / 免费但不开源 / 付费
+    validations:
+      required: true
+  - type: checkboxes
+    id: source_check
+    attributes:
+      label: 来源确认
+      options:
+        - label: 我提供的是官方来源，不是破解、网盘转载或第三方下载站。
+          required: true

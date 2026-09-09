@@ -1,0 +1,31 @@
+name: 问题反馈
+description: 报告链接失效、信息错误或安全风险
+title: "[问题] "
+labels:
+  - correction
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: 问题类型
+      options:
+        - 链接失效
+        - 信息错误或过期
+        - 软件停止维护
+        - 安全或来源风险
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: software
+    attributes:
+      label: 涉及的软件
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 详细说明
+      description: 请附上可以核实问题的官方来源。
+    validations:
+      required: true
