@@ -11,7 +11,7 @@ body:
       options:
         - 链接失效
         - 信息错误或过期
-        - 软件停止维护
+        - 软件停止维护或硬件停产
         - 安全或来源风险
         - 其他
     validations:
@@ -19,7 +19,7 @@ body:
   - type: input
     id: software
     attributes:
-      label: 涉及的软件
+      label: 涉及的软件或硬件
     validations:
       required: true
   - type: textarea

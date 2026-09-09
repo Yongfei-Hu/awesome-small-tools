@@ -25,5 +25,9 @@ jobs:
             --verbose
             --no-progress
             --accept 200,204,206,429
+            --exclude https://blog\.bahraniapps\.com/.*
+            --exclude https://www\.adobe\.com/.*
+            --exclude https://www\.anaconda\.com/.*
+            --exclude https://www\.tableau\.com/.*
             README.md CONTRIBUTING.md
           fail: true

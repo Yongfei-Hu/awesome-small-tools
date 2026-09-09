@@ -1,5 +1,5 @@
-name: 推荐软件
-description: 推荐一个值得体验或收录的小而美软件
+name: 推荐项目
+description: 推荐一个值得收录的软件或硬件
 title: "[推荐] "
 labels:
   - candidate
@@ -10,8 +10,8 @@ body:
   - type: input
     id: name
     attributes:
-      label: 软件名称
-      placeholder: MarkerOn
+      label: 软件名称或硬件型号
+      placeholder: MarkerOn / 高漫 WH851
     validations:
       required: true
   - type: input
@@ -47,15 +47,15 @@ body:
   - type: input
     id: platforms
     attributes:
-      label: 支持平台
-      placeholder: Windows、macOS、Linux
+      label: 支持平台或硬件兼容性
+      placeholder: Windows、macOS、Linux / 蓝牙与 USB-C
     validations:
       required: true
   - type: input
     id: license
     attributes:
-      label: 许可证或收费模式
-      placeholder: MIT / 免费但不开源 / 付费
+      label: 许可证、收费模式或产品类型
+      placeholder: MIT / 免费但不开源 / 付费软件 / 硬件产品
     validations:
       required: true
   - type: checkboxes
