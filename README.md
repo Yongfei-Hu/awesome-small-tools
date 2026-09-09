@@ -62,7 +62,7 @@
 
 ## 推荐新软件
 
-欢迎通过 [推荐软件](../../issues/new?template=recommend.yml) 提交候选，也可以通过 [问题反馈](../../issues/new?template=report.yml) 报告链接失效或信息错误。提交前请阅读 [贡献指南](CONTRIBUTING.md)。
+欢迎通过 [推荐软件](https://github.com/Yongfei-Hu/awesome-small-tools/issues/new?template=recommend.yml) 提交候选，也可以通过 [问题反馈](https://github.com/Yongfei-Hu/awesome-small-tools/issues/new?template=report.yml) 报告链接失效或信息错误。提交前请阅读 [贡献指南](CONTRIBUTING.md)。
 
 ## 许可说明
 
