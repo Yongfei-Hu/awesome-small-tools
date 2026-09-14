@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Beyond Compare icon</title>
+  <rect width="64" height="64" rx="12" fill="#5b3f91"/>
+  <path d="M16 18h14c6 0 10 4 10 10v18H26c-6 0-10-4-10-10z" fill="#fff" opacity=".95"/>
+  <path d="M48 46H34c-6 0-10-4-10-10V18h14c6 0 10 4 10 10z" fill="#d9c9ff"/>
+  <path d="M24 28h12M28 36h12" stroke="#5b3f91" stroke-width="4" stroke-linecap="round"/>
+</svg>
