@@ -11,6 +11,7 @@
 - [知识、文档与学习](#知识文档与学习)
 - [网络、远程与存储](#网络远程与存储)
 - [数据、科研与开发](#数据科研与开发)
+- [AI Skills](#ai-skills)
 - [屏幕、媒体与时间管理](#屏幕媒体与时间管理)
 - [硬件与外设](#硬件与外设)
 - [收录标准](#收录标准)
@@ -19,8 +20,8 @@
 
 | 名称                    | 用途                                                             | 平台    | 授权 / 费用                  | 使用提示                                           | 官方链接                                                                                                            |
 | ----------------------- | ---------------------------------------------------------------- | ------- | ---------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| <img src="assets/icons/yxcal.png" width="20" height="20" alt=""> **优效日历**            | 替换 Windows 原生日历，显示节假日、调休、日程、待办和桌面小组件  | Windows | 免费使用，部分功能以官网为准 | 适合希望直接在桌面和任务栏查看中国节假日安排的用户 | [官网](https://www.yxcal.com/)                                                                                      |
-| <img src="assets/icons/quicker.png" width="20" height="20" alt=""> **Quicker**             | 通过面板、快捷键和组合动作自动完成重复操作                       | Windows | 免费基础版 / 专业版          | 动作库丰富；使用第三方动作前应检查其权限和具体步骤 | [官网](https://getquicker.net/) · [下载](https://getquicker.net/Download)                                           |
+| <img src="assets/icons/yxcal.png" width="20" height="20" alt=""> **优效日历**            | 替换 Windows 原生日历，显示节假日、调休、日程、待办和桌面小组件，也有番茄钟和久坐提醒 | Windows | 免费基础功能 / 高级会员；个人记录：88 元/年（2026-09，实际价格以购买页为准） | 久坐提醒需会员，入口：工具 → 系统工具 → 久坐提醒；番茄钟入口：工具 → 番茄钟 | [官网](https://www.yxcal.com/)                                                                                      |
+| <img src="assets/icons/quicker.png" width="20" height="20" alt=""> **Quicker**             | 通过面板、快捷键和组合动作自动完成重复操作                       | Windows | 免费基础版 / 专业版          | 个人常用且顺手的动作：番茄钟、浏览程序安装目录；可在动作库中查找并添加，使用前查看具体步骤 | [官网](https://getquicker.net/) · [下载](https://getquicker.net/Download)                                           |
 | <img src="assets/icons/zoomit.svg" width="20" height="20" alt=""> **ZoomIt**               | 提供屏幕缩放、标注、倒计时和演示辅助功能                         | Windows | 免费软件，非开源           | 适合演示、教学和录屏；首次使用时熟悉全局快捷键，避免与其他软件冲突 | [微软 Sysinternals](https://learn.microsoft.com/sysinternals/downloads/zoomit) · [下载](https://download.sysinternals.com/files/ZoomIt.zip) |
 | <img src="assets/icons/fastcopy.svg" width="20" height="20" alt=""> **FastCopy**             | 面向 Windows 的高性能文件复制、移动、删除和同步工具              | Windows | 免费软件，非开源           | 适合大量文件或大体积数据传输；执行删除、镜像和覆盖操作前应仔细核对参数 | [官网](https://fastcopy.jp/) · [下载](https://fastcopy.jp/en/)                                              |
 | <img src="assets/icons/beyond-compare.svg" width="20" height="20" alt=""> **Beyond Compare**       | 对比并合并文件、文件夹及部分数据源，适合处理差异和同步任务       | Windows、macOS、Linux | 商业软件，提供试用版       | 三向合并和目录同步功能很实用；批量覆盖前建议先预览差异并保留备份 | [官网](https://www.scootersoftware.com/) · [下载](https://www.scootersoftware.com/download)                  |
@@ -56,12 +57,24 @@
 
 | 名称                       | 用途                                                         | 平台                       | 授权 / 费用          | 使用提示                                                                  | 官方链接                                                                                                                     |
 | -------------------------- | ------------------------------------------------------------ | -------------------------- | -------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **iSlide** | PowerPoint 插件，辅助排版与图片导出，可将 PPT 中制作的科研图导出为投稿用图 | Windows、macOS（功能以对应版本为准） | 免费基础功能 / 会员功能 | 可辅助制作符合 SCI 期刊要求的图片；导出时按目标期刊设置格式、尺寸和分辨率，并检查字体与线条清晰度，不能仅凭导出成功认定达标 | [官网](https://www.islide.cc/) |
 | <img src="assets/icons/tableau.ico" width="20" height="20" alt=""> **Tableau Desktop 2023.1** | 连接数据并制作交互式图表、仪表板和分析报告                   | Windows、macOS             | 商业软件             | 这是历史版本，下载可能需要 Tableau 账号和有效许可证；不应误当作当前最新版 | [2023.1 官方页面](https://www.tableau.com/zh-cn/support/releases/desktop/2023.1)                                             |
 | <img src="assets/icons/tecplot.ico" width="20" height="20" alt=""> **Tecplot**                | 对 CFD、仿真和实验数据进行二维、三维可视化与后处理           | 桌面端，具体系统见产品要求 | 商业软件             | 更适合工程和科研数据后处理；安装前核对许可证与版本兼容性                  | [官网](https://tecplot.com/)                                                                                                 |
 | **PowerShell 7（`pwsh`）** | 微软开源的跨平台命令行 Shell 和自动化脚本环境                | Windows、macOS、Linux      | MIT                  | 可与 Windows PowerShell 5.1 并存，启动命令为 `pwsh`                       | [官方仓库](https://github.com/PowerShell/PowerShell) · [下载](https://github.com/PowerShell/PowerShell/releases/latest)      |
 | <img src="assets/icons/jupyter.svg" width="20" height="20" alt=""> **Jupyter Notebook**       | 在浏览器中组合代码、Markdown、公式和运行结果，进行交互式计算 | 跨平台、浏览器             | BSD 系列开源许可证   | 适合实验和教学；正式项目仍应配合脚本、环境文件和版本控制                  | [官网](https://jupyter.org/)                                                                                                 |
 | <img src="assets/icons/miniconda.svg" width="20" height="20" alt=""> **Miniconda**              | 提供精简的 Conda 和 Python 环境，用于隔离项目依赖            | Windows、macOS、Linux      | 按 Anaconda 条款使用 | 默认只含 Conda、Python 和少量基础包，比完整 Anaconda 更轻量               | [官方文档](https://www.anaconda.com/docs/getting-started/miniconda/main) · [下载](https://www.anaconda.com/download/success) |
 | <img src="assets/icons/cc-switch.png" width="20" height="20" alt=""> **CC Switch**              | 统一管理并切换 Claude Code、Codex 等 AI CLI 的供应商和配置   | Windows、macOS、Linux      | 开源免费             | 配置可能包含 API 凭据，备份、同步和导入配置时注意避免泄露                 | [官网](https://ccswitch.io/) · [官方仓库](https://github.com/farion1231/cc-switch)                                           |
+
+## AI Skills
+
+这类工具为 AI 助手提供可复用的工作方法或能力，需在支持 Skills 的助手中使用。以下介绍按所链接项目整理；技能文件本身与模型、API 或外部服务的费用分开计算。
+
+| 名称 | 用途 | 使用环境 | 授权 / 费用 | 使用提示 | 项目来源 |
+| --- | --- | --- | --- | --- | --- |
+| **agent-reach** | 为 AI 助手接入网页搜索、文章读取和多个内容平台，根据平台选择合适的 CLI、API 或浏览器后端，减少逐个平台配置和切换的工作 | AI 助手 + 本机 CLI / MCP 等依赖 | 各组件及外部服务遵循各自条款 | 适合跨平台搜集资料与追踪讨论；先用 `agent-reach doctor --json` 检查可用后端，部分平台需要登录或额外配置 | [项目仓库](https://github.com/Panniantong/Agent-Reach) |
+| **eli5** | 按读者的年龄、知识背景或职业调整解释方式，用熟悉的类比和分步说明讲清概念、代码与报错 | 支持 Skills 的 AI 助手 | MIT；模型费用另计 | 不只适合“解释给五岁小孩听”；可以指定“讲给非技术同事听”或“按研究生水平解释”，兼顾易懂与准确 | [项目仓库](https://github.com/DreambigOu/ELI5) · [技能文件](https://github.com/DreambigOu/ELI5/blob/main/skills/eli5/SKILL.md) |
+| **grill-me** | 通过持续追问梳理计划、设计和决策，检查隐含假设与尚未解决的分支，帮助把模糊想法变成明确选择 | 支持 Skills 的 AI 助手 | MIT；模型费用另计 | 选用 mattpocock/skills 中的版本；当前 `grill-me` 转交给 `grilling`，按决策依赖分轮提问并给出建议答案，适合实施前检验方案 | [项目仓库](https://github.com/mattpocock/skills) · [技能文件](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) · [实现](https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md) |
+| **i-have-adhd** | 将 AI 回复组织成更容易开始执行的形式：先给下一步动作，复杂任务编号拆分，持续交代进度并减少岔题 | 支持 Skills 的 AI 助手 | MIT；模型费用另计 | 适合希望减少阅读负担、明确行动步骤的用户；用 `/i-have-adhd` 开启，`stop adhd mode` 关闭；这是输出风格辅助，不是诊断或治疗工具 | [项目仓库](https://github.com/ayghri/i-have-adhd) · [技能文件](https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md) |
 
 ## 屏幕、媒体与时间管理
 
