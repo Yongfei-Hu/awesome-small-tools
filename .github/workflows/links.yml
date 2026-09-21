@@ -29,7 +29,8 @@ jobs:
             --timeout 45
             --accept 200,204,206,429
             --exclude https://blog\.bahraniapps\.com/.*
-            --exclude https://(www\.)?gaomon\.cn/.*
+            --exclude https://gaomon\.cn/.*
+            --exclude https://www\.gaomon\.cn/.*
             --exclude https://www\.adobe\.com/.*
             --exclude https://www\.anaconda\.com/.*
             --exclude https://www\.tableau\.com/.*
