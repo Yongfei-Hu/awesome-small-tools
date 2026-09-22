@@ -75,6 +75,7 @@
 | **eli5** | 按读者的年龄、知识背景或职业调整解释方式，用熟悉的类比和分步说明讲清概念、代码与报错 | 支持 Skills 的 AI 助手 | MIT；模型费用另计 | 不只适合“解释给五岁小孩听”；可以指定“讲给非技术同事听”或“按研究生水平解释”，兼顾易懂与准确 | [项目仓库](https://github.com/DreambigOu/ELI5) · [技能文件](https://github.com/DreambigOu/ELI5/blob/main/skills/eli5/SKILL.md) |
 | **grill-me** | 通过持续追问梳理计划、设计和决策，检查隐含假设与尚未解决的分支，帮助把模糊想法变成明确选择 | 支持 Skills 的 AI 助手 | MIT；模型费用另计 | 选用 mattpocock/skills 中的版本；当前 `grill-me` 转交给 `grilling`，按决策依赖分轮提问并给出建议答案，适合实施前检验方案 | [项目仓库](https://github.com/mattpocock/skills) · [技能文件](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) · [实现](https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md) |
 | **i-have-adhd** | 将 AI 回复组织成更容易开始执行的形式：先给下一步动作，复杂任务编号拆分，持续交代进度并减少岔题 | 支持 Skills 的 AI 助手 | MIT；模型费用另计 | 适合希望减少阅读负担、明确行动步骤的用户；用 `/i-have-adhd` 开启，`stop adhd mode` 关闭；这是输出风格辅助，不是诊断或治疗工具 | [项目仓库](https://github.com/ayghri/i-have-adhd) · [技能文件](https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md) |
+| **Playwright MCP** | 让 AI 助手通过结构化的可访问性快照操作真实浏览器，完成页面导航、表单填写、交互验证和网页自动化 | 支持 MCP 的 AI 助手 + Node.js 18+ | Apache-2.0；模型费用另计 | 由 Microsoft 维护；适合需要可重复浏览器操作的任务，登录态与浏览器数据涉及隐私，配置持久化用户目录时应谨慎 | [项目仓库](https://github.com/microsoft/playwright-mcp) |
 
 ## 屏幕、媒体与时间管理
 
