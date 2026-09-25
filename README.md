@@ -97,6 +97,7 @@
 | --------------- | ---------------------------------------------------- | ------------------------ | --------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | <img src="assets/icons/markeron.png" width="20" height="20" alt=""> **MarkerOn**    | 在任意应用上方绘画、标注和高亮，适合教学、会议与录屏 | Windows、macOS           | MIT                               | 快捷键优先，支持鼠标穿透；本机使用过 v1.4.4，下载时建议选择官方最新版 | [官方仓库](https://github.com/ifer47/markeron) · [下载](https://github.com/ifer47/markeron/releases/latest) |
 | <img src="assets/icons/gifcam.png" width="20" height="20" alt=""> **GifCam**      | 通过可调整的录制窗口快速制作和编辑 GIF               | Windows                  | 免费软件，非开源                  | 体积小、操作直接；下载入口位于作者博客的 GifCam 页面中                | [官方页面](https://blog.bahraniapps.com/gifcam/)                                                            |
+| **像素蛋糕 PixCake** | 使用 AI 进行人像精修、批量修图和照片调色 | Windows、macOS | 付费套餐；权益以官网为准 | 适合商业摄影后期；修图张数等权益有期限，购买前核对套餐规则 | [官网](https://www.pixcakeai.com/) · [下载](https://www.pixcakeai.com/download) |
 | <img src="assets/icons/atimelogger.png" width="20" height="20" alt=""> **aTimeLogger** | 一键记录不同活动的耗时，并通过统计了解时间分配       | Android、iOS、macOS、Web | 免费基础功能 / 付费功能与同步服务 | 适合手动记录学习、工作和生活用时；跨设备同步需查看当前方案            | [官网](https://atimelogger.pro/)                                                                            |
 
 ## 硬件与外设
