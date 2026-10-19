@@ -4,29 +4,56 @@ on:
   push:
     branches:
       - main
+    paths:
+      - README.md
+      - CONTRIBUTING.md
+      - assets/**
+      - .github/workflows/links.yml
+      - .github/scripts/check_link_report.py
   pull_request:
+    paths:
+      - README.md
+      - CONTRIBUTING.md
+      - assets/**
+      - .github/workflows/links.yml
+      - .github/scripts/check_link_report.py
   schedule:
+    # Mondays at 11:23 Asia/Shanghai (03:23 UTC).
     - cron: "23 3 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   links:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Check out repository
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - name: Check links
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Scan links
+        id: lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.6.1
         with:
+          lycheeVersion: v0.24.2
+          format: json
+          output: lychee/report.json
+          jobSummary: false
+          # The next step classifies failures; scanner/setup errors still fail.
+          fail: false
           args: >-
             --verbose
             --no-progress
-            --max-retries 6
+            --max-retries 2
             --retry-wait-time 5
-            --timeout 45
+            --timeout 20
             --accept 200,204,206,429
             --exclude https://blog\.bahraniapps\.com/.*
             --exclude https://gaomon\.cn/.*
@@ -35,4 +62,7 @@ jobs:
             --exclude https://www\.anaconda\.com/.*
             --exclude https://www\.tableau\.com/.*
             README.md CONTRIBUTING.md
-          fail: true
+      - name: Report broken links and network warnings
+        env:
+          LYCHEE_EXIT_CODE: ${{ steps.lychee.outputs.exit_code }}
+        run: python3 .github/scripts/check_link_report.py lychee/report.json
